@@ -2,7 +2,7 @@
 #include "vector"
 #include <cmath>
 #include "SimpleAudioEngine.h"
-#include "Settings.h"
+#include "SettingsLayer.h"
 #include "time.h"
 
 using namespace cocos2d;

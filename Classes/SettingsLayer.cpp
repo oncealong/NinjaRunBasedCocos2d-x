@@ -1,11 +1,11 @@
-#include "Settings.h"
+#include "SettingsLayer.h"
 #include "SimpleAudioEngine.h"
 #include "GameLayer.h"
 
 using namespace cocos2d;
 using namespace std;
 
-bool Settings::init()
+bool SettingsLayer::init()
 {
 	if(!Layer::init())
 	{
@@ -18,7 +18,7 @@ bool Settings::init()
 	music=MenuItemImage::create(		
 			"pic/yinyue1.png",
 			"pic/yinyue1.png",
-			CC_CALLBACK_1(Settings::menuMusicCallback,this)
+			CC_CALLBACK_1(SettingsLayer::menuMusicCallback,this)
 			                   );
 	music->setEnabled(true);
 	music->setScale(1.7f);
@@ -28,7 +28,7 @@ bool Settings::init()
 	sound=MenuItemImage::create(
 			"pic/yinyue1.png",
 			"pic/yinyue1.png",
-			CC_CALLBACK_1(Settings::menuSoundCallback,this));
+			CC_CALLBACK_1(SettingsLayer::menuSoundCallback,this));
 	sound->setEnabled(true);
 	sound->setScale(1.7f);
 	sound->setAnchorPoint(Vec2(0,0));
@@ -53,7 +53,7 @@ bool Settings::init()
 	back=MenuItemImage::create(
 			"pic/back.png",
 			"pic/back.png",
-			CC_CALLBACK_1(Settings::menuBackCallback,this)
+			CC_CALLBACK_1(SettingsLayer::menuBackCallback,this)
 			);
 	back->setEnabled(true);
 	back->setScale(2.0f);
@@ -73,7 +73,7 @@ bool Settings::init()
 	return true;
 }
 
-void Settings::menuMusicCallback(Ref* ref)
+void SettingsLayer::menuMusicCallback(Ref* ref)
 {
    if(UserDefault::getInstance()->getBoolForKey("musicFlag"))
    {
@@ -87,7 +87,7 @@ void Settings::menuMusicCallback(Ref* ref)
 	   UserDefault::getInstance()->setBoolForKey("musicFlag",true);
    }
 }
-void Settings::menuSoundCallback(Ref* ref)
+void SettingsLayer::menuSoundCallback(Ref* ref)
 {
 
 	if(UserDefault::getInstance()->getBoolForKey("soundFlag"))
@@ -100,7 +100,7 @@ void Settings::menuSoundCallback(Ref* ref)
 		  UserDefault::getInstance()->setBoolForKey("soundFlag",true);
 	}
 }
-void Settings::menuBackCallback(Ref* ref)
+void SettingsLayer::menuBackCallback(Ref* ref)
 {
    sceneManager->gotoMainScene();
 }

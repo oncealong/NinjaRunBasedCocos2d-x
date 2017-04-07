@@ -8,7 +8,7 @@
 using namespace cocos2d;
 using namespace std;
 
-class Settings : public cocos2d::Layer
+class SettingsLayer : public cocos2d::Layer
 {
 public:
 	virtual bool init();
@@ -26,7 +26,7 @@ public:
 
 	SceneManager *sceneManager;
 
-   CREATE_FUNC(Settings);
+   CREATE_FUNC(SettingsLayer);
 };
 
 #endif

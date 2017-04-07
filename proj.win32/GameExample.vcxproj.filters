@@ -24,10 +24,10 @@
     <ClCompile Include="..\Classes\SceneManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Settings.cpp">
+    <ClCompile Include="..\Classes\WelcomeLayer.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\WelcomeLayer.cpp">
+    <ClCompile Include="..\Classes\SettingsLayer.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClInclude Include="..\Classes\SceneManager.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Settings.h">
+    <ClInclude Include="..\Classes\WelcomeLayer.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\WelcomeLayer.h">
+    <ClInclude Include="..\Classes\SettingsLayer.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

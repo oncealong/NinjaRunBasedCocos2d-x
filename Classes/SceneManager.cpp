@@ -1,7 +1,7 @@
 #include "SceneManager.h"								//引入SceneManager头文件
 #include "WelcomeLayer.h"								//引入WelcomeLayer头文件
 #include "GameLayer.h" 									//引入GameLayer头文件
-#include "Settings.h"									//引入Settings头文件
+#include "SettingsLayer.h"									//引入Settings头文件
 using namespace cocos2d;								//引入cocos2d命名空间
 void SceneManager::createGameScene(){					//创建游戏场景的方法
     gameScene = Scene::create();						//创建游戏场景对象
@@ -17,7 +17,7 @@ void SceneManager::createMainScene(){					//创建主界面场景的方法
 }
 void SceneManager::createSettingsScene(){				//创建设置界面场景方法
 	settingsScene=Scene::create();						//创建设置界面场景对象
-	auto layer=Settings::create();						//创建设置界面布景对象
+	auto layer=SettingsLayer::create();						//创建设置界面布景对象
 	//layer->retain();									//保持此布景对象
 	layer->sceneManager=this;							//将布景中sceneManager指针指向此对象
 	settingsScene->addChild(layer);						//将设置界面布景添加进场景中

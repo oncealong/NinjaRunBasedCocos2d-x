@@ -152,7 +152,7 @@ xcopy /Y /Q "$(COCOS_X_ROOT)\cocos2d-x-3.10\prebuilt\win32\*.*" "$(OutDir)"
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\GameLayer.cpp" />
     <ClCompile Include="..\Classes\SceneManager.cpp" />
-    <ClCompile Include="..\Classes\Settings.cpp" />
+    <ClCompile Include="..\Classes\SettingsLayer.cpp" />
     <ClCompile Include="..\Classes\WelcomeLayer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -160,7 +160,7 @@ xcopy /Y /Q "$(COCOS_X_ROOT)\cocos2d-x-3.10\prebuilt\win32\*.*" "$(OutDir)"
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\GameLayer.h" />
     <ClInclude Include="..\Classes\SceneManager.h" />
-    <ClInclude Include="..\Classes\Settings.h" />
+    <ClInclude Include="..\Classes\SettingsLayer.h" />
     <ClInclude Include="..\Classes\WelcomeLayer.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
