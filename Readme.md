@@ -20,17 +20,17 @@ vs2017报找不到MSVCR110.dll，需要安装
 
 # 3. 运行界面  
 
-## 游戏结束界面
 
 ## 游戏菜单界面
-![](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/Menu.bmp)
+![游戏菜单界面](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/Menu.bmp)
 
 ## 游戏运行界面
-![](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/Game.bmp)
+![游戏运行界面](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/Game.bmp)
 
 ## 游戏设置界面
-![](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/Setting.bmp)
+![游戏设置界面](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/Setting.bmp)
 
+## 游戏结束界面
 ![游戏结束界面](http://oaa8t25yd.bkt.clouddn.com/image/ninjarun/GameOver.bmp)
 
 
